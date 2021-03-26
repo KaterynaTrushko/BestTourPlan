@@ -1,8 +1,11 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 body {
   font-family: $primary-font;
   }
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+}

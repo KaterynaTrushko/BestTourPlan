@@ -1,0 +1,92 @@
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-down:before {
+  content: "\e916";
+}
+.icon-side:before {
+  content: "\e917";
+  color: #828282;
+}
+.icon-search:before {
+  content: "\e915";
+}
+.icon-cart:before {
+  content: "\e905";
+}
+.icon-tick .path1:before {
+  content: "\e906";
+  color: rgb(51, 51, 51);
+}
+.icon-tick .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-tel:before {
+  content: "\e908";
+}
+.icon-let:before {
+  content: "\e90b";
+}
+.icon-tel1:before {
+  content: "\e90c";
+}
+.icon-gps:before {
+  content: "\e90d";
+}
+.icon-cal:before {
+  content: "\e90e";
+}
+.icon-lel2:before {
+  content: "\e90f";
+}
+.icon-home:before {
+  content: "\e910";
+}
+.icon-user:before {
+  content: "\e911";
+}
+.icon-star:before {
+  content: "\e912";
+}
+.icon-star2:before {
+  content: "\e913";
+}
+.icon-gift:before {
+  content: "\e914";
+}
+.icon-p:before {
+  content: "\e900";
+}
+.icon-yt:before {
+  content: "\e901";
+}
+.icon-inst:before {
+  content: "\e902";
+}
+.icon-tw:before {
+  content: "\e903";
+}
+

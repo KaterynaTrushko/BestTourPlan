@@ -1,10 +1,6 @@
-@mixin media-breakpoint-up($breakpoint) {
-  $current-bp: map-get( $breakpoints, $breakpoint );
-  @media screen and (min-width: $current-bp) {
-    @content
-  }
-};
 
-
-
-
+@mixin text-preheader {
+  font-size: 10px;
+  line-height: 13px;
+  color: $text-color;
+}
