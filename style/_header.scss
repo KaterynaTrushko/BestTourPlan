@@ -2,8 +2,49 @@
   width: 100%;
   height: 100%;
   border: 1px solid cornflowerblue;
-  background-color: cornflowerblue;
+  background-color: rgb(210, 222, 245);
 }
+.header{
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+.header__tel-inf {
+  text-decoration: none;
+  padding-right: 5px;
+  @include text-preheader;
+  font-weight: bold;
+}
+.header__tel{
+  min-width: 243px;
+  text-decoration: none;
+  @include text-preheader;
+  &:hover {
+    font-weight: bold;
+    text-shadow: 1px 1px;
+    color:$text-color;
+  }
+}
+.header-card__link {
+  padding-left: 21px;
+@include text-preheader;
+&:hover {
+  font-weight: bold;
+  text-shadow: 1px 1px ;
+  color:$text-color;
+  }
+}
+.header-card__icon {
+  padding-left: 89px;
+}
+.header-card {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
 
 .header-form {
   display: flex;
@@ -13,7 +54,7 @@
   background-color: $vaf-color2;
   border-radius: 6px 0 0 6px;
   padding: 12px 173px 13px 23px;
-  &:-webkit-input-placeholder {
+  &:placeholder {
     font-family: "Mulish";
     font-size: 15px;
     line-height: 15px;
@@ -21,7 +62,10 @@
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 8px rgba(blue 0.3);
+    box-shadow: 0 0 0 1px rgb(66, 136, 216);
+  }
+  &:hover {
+    box-shadow: 0 0 0 1px rgb(66, 136, 216);
   }
 }
 .header-form__btn {
@@ -30,7 +74,7 @@
   border: none;
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 8px rgba(155, 51, 51 0.3);
+    box-shadow: 0 0 0 2px #ac1f46;
   }
   &:hover {
     background-color: #ac1f46;
@@ -41,3 +85,5 @@
   padding: 26px 13px 26px 15px;
   color: $var-color;
 }
+
+

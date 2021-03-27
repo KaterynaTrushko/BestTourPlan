@@ -1,11 +1,18 @@
 body {
   font-family: $primary-font;
-  }
-
+}
 a {
   text-decoration: none;
 }
-
 input {
+  border: none;
+}
+ul{
+  margin-left: 0;
+}
+li {
+  list-style: none;
+}
+button {
   border: none;
 }

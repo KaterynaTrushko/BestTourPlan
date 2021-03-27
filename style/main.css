@@ -1631,6 +1631,18 @@ input {
   border: none;
 }
 
+ul {
+  margin-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
 .container {
   width: 1140px;
   padding-left: 15px;
@@ -1750,8 +1762,66 @@ input {
 .box {
   width: 100%;
   height: 100%;
-  border: 1px solid  cornflowerblue;
-  background-color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  background-color: #d2def5;
+}
+
+.header {
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+.header__tel-inf {
+  text-decoration: none;
+  padding-right: 5px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.header__tel {
+  min-width: 243px;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 13px;
+  color: #333333;
+}
+
+.header__tel:hover {
+  font-weight: bold;
+  text-shadow: 1px 1px;
+  color: #333333;
+}
+
+.header-card__link {
+  padding-left: 21px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #333333;
+}
+
+.header-card__link:hover {
+  font-weight: bold;
+  text-shadow: 1px 1px;
+  color: #333333;
+}
+
+.header-card__icon {
+  padding-left: 89px;
+}
+
+.header-card {
+  margin-top: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header-form {
@@ -1767,7 +1837,7 @@ input {
   padding: 12px 173px 13px 23px;
 }
 
-.header-form__input::-webkit-input-placeholder {
+.header-form__input:placeholder {
   font-family: "Mulish";
   font-size: 15px;
   line-height: 15px;
@@ -1775,8 +1845,14 @@ input {
 }
 
 .header-form__input:focus {
-  -webkit-box-sizing: 0 0 0 8px rgba;
-          box-sizing: 0 0 0 8px rgba;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 1px #4288d8;
+          box-shadow: 0 0 0 1px #4288d8;
+}
+
+.header-form__input:hover {
+  -webkit-box-shadow: 0 0 0 1px #4288d8;
+          box-shadow: 0 0 0 1px #4288d8;
 }
 
 .header-form__btn {
@@ -1785,9 +1861,102 @@ input {
   border: none;
 }
 
+.header-form__btn:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ac1f46;
+          box-shadow: 0 0 0 2px #ac1f46;
+}
+
+.header-form__btn:hover {
+  background-color: #ac1f46;
+}
+
 .header-form__icon {
   font-family: "Icomoon";
   padding: 26px 13px 26px 15px;
   color: #fff;
+}
+
+.activ-title {
+  margin-top: 60px;
+  margin-bottom: 57px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.activ-card__block {
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.activ-card__inner {
+  position: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, rgba(196, 196, 196, 0)), to(#0A223D));
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 35%, #0A223D 100%);
+  padding-left: 26px;
+  padding-bottom: 24px;
+}
+
+.activ-card__image {
+  display: block;
+  width: 100%;
+}
+
+.activ-card__image-item {
+  width: 100%;
+  height: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+
+.activ-card__title {
+  max-width: 200px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.activ-card__btn {
+  padding: 7px 22px 7px 21px;
+  background: #ec1f46;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.activ-card__btn:hover {
+  background: #ac1f46;
+}
+
+.activ-list {
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */

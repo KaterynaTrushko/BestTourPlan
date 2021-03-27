@@ -12,16 +12,16 @@
 </head>
 <body>
 <header>
-  <div class="header container">
+  <div class="container  box">
     <div class="row">
-      <div class="col-xl-3">
+      <div class="col header">
         <a href="tel:+1234561500" class="header__tel"><span class="header__tel-inf">Questions? Need Help? </span>Call us on (+123) 456 1500</a>
       </div>
-      <div class="col-xl-4 offset-xl-5">
-        <span class="icon-cart" aria-label="hiden"></span>
-        <a href="/" class="header__link">BTP Gift Card</a>
-        <span class="icon-gift" aria-label="hiden"></span>
-        <a href="/" class="header__link">BTP Gift Card</a>
+      <div class="col header-card">
+        <span class="icon-cart header-card__icon" aria-label="hiden"></span>
+        <a href="/" class="header-card__link">BTP Gift Card</a>
+        <span class="icon-gift header-card__icon" aria-label="hiden"></span>
+        <a href="/" class="header-card__link">BTP Gift Card</a>
       </div>
     </div>
     <div class="row">
@@ -36,11 +36,97 @@
           </button>
         </form>
       </div>
+      <div class="col">
+        <div class="heard-acaunt">
+          <span class="icon-cart heard-acaunt__icon" aria-labelledby="in еру cart"></span>
+          <img src="/images/natan.svg" alt="avatar" class="heard-acaunt__ava">
+          <span class="heard-acaunt__name">Nathan</span>
+          <span class="icon-down heard-acaunt__icon2" ></span>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 <main>
-</main>
+  <section class="activ">
+    <div class="container">
+      <h2 class="activ-title">Other Activities</h2>
+      <ul class="row activ-list">
+        <li class="col-md-6 col-xl-3 activ-card">
+          <div class="activ-card__block">
+            <picture class="activ-card__image">
+              <source srcset="./images/activities/01/image_1x.webp 1x,
+                              ./images/activities/01/image_2x.webp 2x" 
+                              type="image/webp">
+              <source srcset="./images/activities/01/image_1x.jpg 1x,
+                              ./images/activities/01/image_2x.jpg 2x" 
+                              type="image/jpeg">
+              <img src="./images/activities/01/image_1x.jpg" class="activ-card__image-item" alt="">
+            </picture>
+            <div class="activ-card__inner">
+              <h3 class="activ-card__title">The curious corner 
+                of chamarel</h3>
+              <button class="activ-card__btn">Book Now</button>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-6 col-xl-3 activ-card">
+          <div class="activ-card__block">
+            <picture class="activ-card__image">
+              <source srcset="./images/activities/02/image_1x.webp 1x,
+                              ./images/activities/02/image_2x.webp 2x" 
+                              type="image/webp">
+              <source srcset="./images/activities/02/image_1x.jpg 1x,
+                              ./images/activities/02/image_2x.jpg 2x" 
+                              type="image/jpeg">
+              <img src="./images/activities/02/image_1x.jpg" class="activ-card__image-item" alt="">
+            </picture>
+            <div class="activ-card__inner">
+              <h3 class="activ-card__title">Gymkhana club golf
+                course</h3>
+              <button class="activ-card__btn">Book Now</button>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-6 col-md-6 col-xl-3 activ-card">
+          <div class="activ-card__block">
+            <picture class="activ-card__image">
+              <source srcset="./images/activities/03/image_1x.webp 1x,
+                              ./images/activities/03/image_2x.webp 2x" 
+                              type="image/webp">
+              <source srcset="./images/activities/03/image_1x.jpg 1x,
+                              ./images/activities/03/image_2x.jpg 2x" 
+                              type="image/jpeg">
+              <img src="./images/activities/03/image_1x.jpg" class="activ-card__image-item" alt="">
+            </picture>
+            <div class="activ-card__inner">
+              <h3 class="activ-card__title">Tamarind falls hiking <br> trip - full day</h3>
+                <button class="activ-card__btn">Book Now</button>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-6 col-xl-3 activ-card">
+          <div class="activ-card__block">
+            <picture class="activ-card__image">
+              <source srcset="./images/activities/04/image_1x.webp 1x,
+                              ./images/activities/04/image_2x.webp 2x" 
+                              type="image/webp">
+              <source srcset="./images/activities/04/image_1x.jpg 1x,
+                              ./images/activities/04/image_2x.jpg 2x" 
+                              type="image/jpeg">
+              <img src="./images/activities/04/image_1x.jpg" class="activ-card__image-item" alt="">
+            </picture>
+            <div class="activ-card__inner">
+              <h3 class="activ-card__title">The blue marine discovery
+                quest</h3>
+                <button class="activ-card__btn">Book Now</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  </main>
 <footer>
 </footer>
 </body>
