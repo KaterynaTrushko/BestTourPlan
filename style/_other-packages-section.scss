@@ -1,5 +1,9 @@
 .hotel-offer {
   display: flex;
+  margin-bottom: 30px;
+  @include media-breakpoint-up(sm) {
+    
+  }
 }
 .hotel-card {
   padding-left: 43px;
@@ -50,31 +54,58 @@
   font-size: 13px;
 }
 .price__item1 {
-  margin-top: 26px;
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 18px;
   text-decoration-line: line-through;
   color: $var-color;
-  }
-  .price__item2 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: $var-color;
-  }
-  .price__btn {
-    margin-top: 44px;
-    max-height: 40px;
-    padding: 11px 27px 10px 26px;
-    background: $secondary-color;
-    border-radius: 4px;
-    font-size: 14px;
-    color: $var-color;
-  }
-  .price {
-    display: flex;
-    justify-content: space-between;
-  }
+}
+.mt {
+  margin-top: 26px;
+}
+.price__item2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $var-color;
+}
+.price__btn {
+  margin-top: 18px;
+  max-height: 40px;
+  padding: 11px 27px 13px 26px;
+  background: $secondary-color;
+  border-radius: 4px;
+  font-size: 14px;
+  color: $var-color;
+}
+.mt_44{
+  margin-top: 44px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel-card__sm {
+  padding-left: 43px;
+  padding-right: 21px;
+  background-color: $primary-color;
+  border-radius: 0px 0px 8px 8px;
+}
+.hotel-card__title-sm {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 23px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color:$var-color;
+}
+.mt_13{
+  margin-top: 13px;
+}
+.mb_30{
+  margin-bottom: 30px;
+}
+
 
 

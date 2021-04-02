@@ -1644,12 +1644,6 @@ button {
   border: none;
 }
 
-.container {
-  width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.woff") format("woff");
@@ -1882,6 +1876,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .hotel-card {
@@ -1940,13 +1935,16 @@ button {
 }
 
 .price__item1 {
-  margin-top: 26px;
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 18px;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   color: #fff;
+}
+
+.mt {
+  margin-top: 26px;
 }
 
 .price__item2 {
@@ -1957,13 +1955,17 @@ button {
 }
 
 .price__btn {
-  margin-top: 44px;
+  margin-top: 18px;
   max-height: 40px;
-  padding: 11px 27px 10px 26px;
+  padding: 11px 27px 13px 26px;
   background: #ec1f46;
   border-radius: 4px;
   font-size: 14px;
   color: #fff;
+}
+
+.mt_44 {
+  margin-top: 44px;
 }
 
 .price {
@@ -1975,11 +1977,36 @@ button {
           justify-content: space-between;
 }
 
+.hotel-card__sm {
+  padding-left: 43px;
+  padding-right: 21px;
+  background-color: #0a223d;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.hotel-card__title-sm {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 23px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.mt_13 {
+  margin-top: 13px;
+}
+
+.mb_30 {
+  margin-bottom: 30px;
+}
+
 .subscribe-block {
+  margin-top: 99px;
+  margin-bottom: 50px;
   background-image: url("/images/back_sub.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .subscribe-block__text {
@@ -2061,6 +2088,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .hotel-card {
@@ -2119,13 +2147,16 @@ button {
 }
 
 .price__item1 {
-  margin-top: 26px;
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 18px;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   color: #fff;
+}
+
+.mt {
+  margin-top: 26px;
 }
 
 .price__item2 {
@@ -2136,13 +2167,17 @@ button {
 }
 
 .price__btn {
-  margin-top: 44px;
+  margin-top: 18px;
   max-height: 40px;
-  padding: 11px 27px 10px 26px;
+  padding: 11px 27px 13px 26px;
   background: #ec1f46;
   border-radius: 4px;
   font-size: 14px;
   color: #fff;
+}
+
+.mt_44 {
+  margin-top: 44px;
 }
 
 .price {
@@ -2152,5 +2187,30 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.hotel-card__sm {
+  padding-left: 43px;
+  padding-right: 21px;
+  background-color: #0a223d;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.hotel-card__title-sm {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 23px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.mt_13 {
+  margin-top: 13px;
+}
+
+.mb_30 {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
