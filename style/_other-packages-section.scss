@@ -43,6 +43,12 @@
   line-height: 22px;
   color:$var-color;
 }
+.infocard__item {
+  padding-bottom: 11px;
+  font-size: 12px;
+  line-height: 15px;
+  color:$var-color;
+}
 .hotel-card__item {
   padding-bottom: 11px;
   font-size: 12px;
@@ -52,7 +58,7 @@
 .mb_30 {
   margin-bottom: 30px;
 }
-.item__icon {
+.hotel-card__icons {
   padding-right: 15px;
   font-family: "Icomoon";
   color:$var-color;
@@ -93,7 +99,7 @@
   display: flex;
   justify-content: space-between;
 }
-.hotel-card__sm {
+.infocard {
   padding-left: 43px;
   padding-right: 21px;
   background-color: $primary-color;
@@ -103,7 +109,7 @@
     @include media-breakpoint-up(lg) { margin-bottom: 30px; }
     @include media-breakpoint-up(xl) { margin-bottom: 30px; }
 }
-.hotel-card__title-sm {
+.infocard__title {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 23px;
@@ -111,6 +117,12 @@
   font-size: 18px;
   line-height: 23px;
   color:$var-color;
+}
+.infocard__icon{
+  padding-right: 15px;
+  font-family: "Icomoon";
+  color: #fff;
+  font-size: 13px;
 }
 .mt_13{
   margin-top: 13px;
@@ -123,7 +135,7 @@
   display: block;
   position: relative;
 }
-.hotel-offers__link {
+.offer-link {
   display: block;
   position:absolute;
   top: 26px;
@@ -140,7 +152,7 @@
     text-decoration: none;
   }
 }
-.hotel-pict__link { 
+.hotel-offer-link{ 
   display: block;
   position:absolute;
   top: 26px;

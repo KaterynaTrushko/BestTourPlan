@@ -12,16 +12,18 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 header">
-          <a href="tel:+1234561500" class="header__tel"><span class="header__tel-inf">Questions? Need Help? </span>Call us on (+123) 456 1500</a>
-        </div>
-        <div class="col-12 col-md-6 header-card">
-          <span class="icon-cart header-card__icon" aria-label="hiden"></span>
-          <a href="/" class="header-card__link">BTp Gift Card</a>
-          <span class="icon-gift header-card__icon" aria-label="hiden"></span>
-          <a href="/" class="header-card__link">BTp Gift Card</a>
+    <div class="header-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 header">
+            <a href="tel:+1234561500" class="header__tel"><span class="header__tel-inf">Questions? Need Help? </span>Call us on (+123) 456 1500</a>
+          </div>
+          <div class="col-12 col-md-6 header-card">
+            <span class="icon-cart header-card__icon" aria-label="hiden"></span>
+            <a href="/" class="header-card__link">BTp Gift Card</a>
+            <span class="icon-gift header-card__icon" aria-label="hiden"></span>
+            <a href="/" class="header-card__link">BTp Gift Card</a>
+          </div>
         </div>
       </div>
     </div>
@@ -39,12 +41,12 @@
           </form>
         </div>
         <div class="col-12 col-xl-3 offset-xl-2">
-          <button class="header-acount">
-            <span class="icon-cart heard-acaunt__icon" aria-labelledby="in еру cart"></span>
-            <span class=" heard-acaunt__num" aria-labelledby="in еру cart number">2</span>
-            <img src="/images/natan.svg" alt="avatar" class="heard-acaunt__ava">
-            <span class="heard-acaunt__name">Natan</span>
-            <span class="icon-down heard-acaunt__icon2" ></span>
+          <button class="header-acaunt">
+            <span class="icon-cart header-acaunt__icon" aria-labelledby="in еру cart"></span>
+            <span class=" header-acaunt__num" aria-labelledby="in еру cart number">2</span>
+            <img src="/images/natan.svg" alt="avatar" class="header-acaunt__ava">
+            <span class="header-acaunt__name">Natan</span>
+            <span class="icon-down header-acaunt__icon2" ></span>
           </button>
         </div>
       </div>
@@ -69,7 +71,6 @@
         <li class="header-breadcrumb__item"><a class="header-breadcrumb__link" href="#">Grand Hilton Hotrl</a></li> 
       </ul>
     </div>
-
   </header>
 <main>
   <section class="packeges">
@@ -90,7 +91,7 @@
                               type="image/jpeg">
                               <img src="./images/othr_pack/1x.jpg" class="hotel-pict__item-first" alt="">
               </picture>
-              <a href="/" class="hotel-pict__link">Flash Offer</a>
+              <a href="/" class="hotel-offer-link">Flash Offer</a>
             </div>
             <div class="hotel-card">
               <span class="icon-star hotel-card__icon"></span>
@@ -101,9 +102,9 @@
               <h3 class="hotel-card__title">Hotel Blue Haven</h3>
               <p class="hotel-card__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
               <ul class="hotel-card-list">
-                <li class="hotel-card__item"><span class="icon-gps item__icon"></span>1749 Wheeler Ridge  Delaware</li>
-                <li class="hotel-card__item"><span class="icon-user item__icon"></span>2 x Guests</li>
-                <li class="hotel-card__item"><span class="icon-home item__icon"></span>1 x Room</li>
+                <li class="hotel-card__item"><span class="icon-gps hotel-card__icons"></span>1749 Wheeler Ridge  Delaware</li>
+                <li class="hotel-card__item"><span class="icon-user hotel-card__icons"></span>2 x Guests</li>
+                <li class="hotel-card__item"><span class="icon-home hotel-card__icons"></span>1 x Room</li>
               </ul>
               <div class="price">
                 <div class="price-block">
@@ -127,14 +128,14 @@
                               type="image/jpeg">
                               <img src="https://via.placeholder.com/350x251" class="hotel-pict__item" alt="">
               </picture>
-              <a href="/" class="hotel-offers__link">Flash Offer</a>
+              <a href="/" class="offer-link">Flash Offer</a>
             </div>
-            <div class="hotel-card__sm ">
-              <h3 class="hotel-card__title-sm">LUX* Belle Mare</h3>
+            <div class="infocard">
+              <h3 class="infocard__title">LUX* Belle Mare</h3>
               <ul class="hotel-card-list">
-                <li class="hotel-card__item"><span class="icon-gps item__icon"></span>1749 Wheeler Ridge  Delaware</li>
-                <li class="hotel-card__item"><span class="icon-user item__icon"></span>2 x Guests</li>
-                <li class="hotel-card__item"><span class="icon-home item__icon"></span>1 x Room</li>
+                <li class="infocard__item"><span class="icon-gps infocard__icon"></span>1749 Wheeler Ridge  Delaware</li>
+                <li class="infocard__item"><span class="icon-user infocard__icon"></span>2 x Guests</li>
+                <li class="infocard__item"><span class="icon-home infocard__icon"></span>1 x Room</li>
               </ul>
               <div class="price mt_13">
                 <div class="price-block">
@@ -146,9 +147,6 @@
             </div>
           </div>
         </div>     
-
-
-
       <div class="col-12 col-md-6 col-xl-4">
         <div class="wpaper">
           <picture class="hotel-pict">
@@ -160,14 +158,14 @@
                           type="image/jpeg">
                           <img src="https://via.placeholder.com/350x251" class="hotel-pict__item" alt="">
           </picture>
-          <a href="/" class="hotel-offers__link">Flash Offer</a>
+          <a href="/" class="offer-link">Flash Offer</a>
         </div>
-        <div class="hotel-card__sm ">
-          <h3 class="hotel-card__title-sm">LUX* Belle Mare</h3>
+        <div class="infocard">
+          <h3 class="infocard__title">LUX* Belle Mare</h3>
           <ul class="hotel-card-list">
-            <li class="hotel-card__item"><span class="icon-gps item__icon"></span>1749 Wheeler Ridge  Delaware</li>
-            <li class="hotel-card__item"><span class="icon-user item__icon"></span>2 x Guests</li>
-            <li class="hotel-card__item"><span class="icon-home item__icon"></span>1 x Room</li>
+            <li class="infocard__item"><span class="icon-gps infocard__icon"></span>1749 Wheeler Ridge  Delaware</li>
+            <li class="infocard__item"><span class="icon-user infocard__icon"></span>2 x Guests</li>
+            <li class="infocard__item"><span class="icon-home infocard__icon"></span>1 x Room</li>
           </ul>
           <div class="price mt_13">
             <div class="price-block">
@@ -189,14 +187,14 @@
                           type="image/jpeg">
                           <img src="https://via.placeholder.com/350x251" class="hotel-pict__item" alt="">
           </picture>
-          <a href="/" class="hotel-offers__link">Flash Offer</a>
+          <a href="/" class="offer-link">Flash Offer</a>
         </div>
-        <div class="hotel-card__sm ">
-          <h3 class="hotel-card__title-sm">LUX* Belle Mare</h3>
+        <div class="infocard">
+          <h3 class="infocard__title">LUX* Belle Mare</h3>
           <ul class="hotel-card-list">
-            <li class="hotel-card__item"><span class="icon-gps item__icon"></span>1749 Wheeler Ridge  Delaware</li>
-            <li class="hotel-card__item"><span class="icon-user item__icon"></span>2 x Guests</li>
-            <li class="hotel-card__item"><span class="icon-home item__icon"></span>1 x Room</li>
+            <li class="infocard__item"><span class="icon-gps infocard__icon"></span>1749 Wheeler Ridge  Delaware</li>
+            <li class="infocard__item"><span class="icon-user infocard__icon"></span>2 x Guests</li>
+            <li class="infocard__item"><span class="icon-home infocard__icon"></span>1 x Room</li>
           </ul>
           <div class="price mt_13">
             <div class="price-block">
@@ -218,14 +216,14 @@
                           type="image/jpeg">
                           <img src="https://via.placeholder.com/350x251" class="hotel-pict__item" alt="">
           </picture>
-          <a href="/" class="hotel-offers__link">Flash Offer</a>
+          <a href="/" class="offer-link">Flash Offer</a>
         </div>
-        <div class="hotel-card__sm ">
-          <h3 class="hotel-card__title-sm">LUX* Belle Mare</h3>
+        <div class="infocard">
+          <h3 class="infocard__title">LUX* Belle Mare</h3>
           <ul class="hotel-card-list">
-            <li class="hotel-card__item"><span class="icon-gps item__icon"></span>1749 Wheeler Ridge  Delaware</li>
-            <li class="hotel-card__item"><span class="icon-user item__icon"></span>2 x Guests</li>
-            <li class="hotel-card__item"><span class="icon-home item__icon"></span>1 x Room</li>
+            <li class="infocard__item"><span class="icon-gps infocard__icon"></span>1749 Wheeler Ridge  Delaware</li>
+            <li class="infocard__item"><span class="icon-user infocard__icon"></span>2 x Guests</li>
+            <li class="infocard__item"><span class="icon-home infocard__icon"></span>1 x Room</li>
           </ul>
           <div class="price mt_13">
             <div class="price-block">
@@ -238,14 +236,6 @@
       </div>
     </div>    
   </section>
-
-
-
-
-
-
-
-
   <section class="subscribe">
     <div class="subscribe-block">
       <div class="container">
@@ -265,10 +255,6 @@
       </div>
     </div>
   </section>
-
-
-
-
   <section class="activ">
     <div class="container">
       <!-- <h2 class="activ-title">Other Activities</h2> -->

@@ -8,6 +8,9 @@
   margin-top: 24px;
   margin-bottom: 23px;
 }
+.header-wrap {
+  background-color: $vaf-color2;
+}
 .header__tel-inf {
   text-decoration: none;
   padding-right: 5px;
@@ -132,7 +135,7 @@
   padding: 26px 13px 26px 15px;
   color: $var-color;
 }
-.heard-acaunt__num {
+.header-acaunt__num {
   right: 3px;
   bottom: 13px;
   z-index:1;
@@ -149,7 +152,7 @@
     border-radius: 50%;
   }
 }
-.header-acount {
+.header-acaunt {
   background-color:$var-color;
   display: flex;
   align-items: center;
@@ -158,22 +161,22 @@
       margin-top: 39px;
   }
 }
-.heard-acaunt__ava {
+.header-acaunt__ava {
   padding-left: 63px;
   padding-right: 18px;
 }
-.heard-acaunt__name {
+.header-acaunt__name {
   font-size: 15px;
   line-height: 18px;
   color: $text-color;
   padding-right:24px;
 }
-.heard-acaunt__icon {
+.header-acaunt__icon {
   font-family: "icomoon";
   font-size: 12px;
   color: #000000;
 }
-.heard-acaunt__icon2 {
+.header-acaunt__icon2 {
   font-family: "icomoon";
   font-size: 8px;
   color: #000000;

@@ -1766,6 +1766,10 @@ button {
   margin-bottom: 23px;
 }
 
+.header-wrap {
+  background-color: #f5fafe;
+}
+
 .header__tel-inf {
   text-decoration: none;
   padding-right: 5px;
@@ -1959,7 +1963,7 @@ button {
   color: #fff;
 }
 
-.heard-acaunt__num {
+.header-acaunt__num {
   right: 3px;
   bottom: 13px;
   z-index: 1;
@@ -1967,7 +1971,7 @@ button {
   line-height: 13px;
 }
 
-.heard-acaunt__num:after {
+.header-acaunt__num:after {
   content: "";
   position: absolute;
   top: calc(50%-20px);
@@ -1978,7 +1982,7 @@ button {
   border-radius: 50%;
 }
 
-.header-acount {
+.header-acaunt {
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1990,30 +1994,30 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header-acount {
+  .header-acaunt {
     margin-top: 39px;
   }
 }
 
-.heard-acaunt__ava {
+.header-acaunt__ava {
   padding-left: 63px;
   padding-right: 18px;
 }
 
-.heard-acaunt__name {
+.header-acaunt__name {
   font-size: 15px;
   line-height: 18px;
   color: #333333;
   padding-right: 24px;
 }
 
-.heard-acaunt__icon {
+.header-acaunt__icon {
   font-family: "icomoon";
   font-size: 12px;
   color: #000000;
 }
 
-.heard-acaunt__icon2 {
+.header-acaunt__icon2 {
   font-family: "icomoon";
   font-size: 8px;
   color: #000000;
@@ -2156,6 +2160,13 @@ button {
   color: #fff;
 }
 
+.infocard__item {
+  padding-bottom: 11px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
 .hotel-card__item {
   padding-bottom: 11px;
   font-size: 12px;
@@ -2167,7 +2178,7 @@ button {
   margin-bottom: 30px;
 }
 
-.item__icon {
+.hotel-card__icons {
   padding-right: 15px;
   font-family: "Icomoon";
   color: #fff;
@@ -2221,7 +2232,7 @@ button {
           justify-content: space-between;
 }
 
-.hotel-card__sm {
+.infocard {
   padding-left: 43px;
   padding-right: 21px;
   background-color: #0a223d;
@@ -2229,24 +2240,24 @@ button {
 }
 
 @media (min-width: 768px) {
-  .hotel-card__sm {
+  .infocard {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 992px) {
-  .hotel-card__sm {
+  .infocard {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 1200px) {
-  .hotel-card__sm {
+  .infocard {
     margin-bottom: 30px;
   }
 }
 
-.hotel-card__title-sm {
+.infocard__title {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 23px;
@@ -2254,6 +2265,13 @@ button {
   font-size: 18px;
   line-height: 23px;
   color: #fff;
+}
+
+.infocard__icon {
+  padding-right: 15px;
+  font-family: "Icomoon";
+  color: #fff;
+  font-size: 13px;
 }
 
 .mt_13 {
@@ -2270,7 +2288,7 @@ button {
   position: relative;
 }
 
-.hotel-offers__link {
+.offer-link {
   display: block;
   position: absolute;
   top: 26px;
@@ -2283,13 +2301,13 @@ button {
   text-decoration: none;
 }
 
-.hotel-offers__link:hover {
+.offer-link:hover {
   background-color: #ac1f46;
   color: #fff;
   text-decoration: none;
 }
 
-.hotel-pict__link {
+.hotel-offer-link {
   display: block;
   position: absolute;
   top: 26px;
@@ -2302,7 +2320,7 @@ button {
   text-decoration: none;
 }
 
-.hotel-pict__link:hover {
+.hotel-offer-link:hover {
   background-color: #ac1f46;
   color: #fff;
   text-decoration: none;
