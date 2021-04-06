@@ -1,36 +1,21 @@
-// @include media-breakpoint-up(sm) { }
-// @include media-breakpoint-up(md) { }
-// @include media-breakpoint-up(lg) { }
-// @include media-breakpoint-up(xl) { }
-
 .hero {
-  @include media-breakpoint-up(md) { 
-    display: flex;
-    justify-content: space-between;
-  }
-  @include media-breakpoint-up(lg) { 
-    display: flex;
-    justify-content: space-between;
-  }
-  @include media-breakpoint-up(xl) { 
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
 }
 .hero-wrap {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items:center;
 }
 .star-icon {
-display: inline-block;
-margin-top: 24px;
-font-family: "Icomoon";
-color: #f2994a;
-font-size: 6px;
+  font-family: "Icomoon";
+  display: inline-block;
+  margin-top: 24px;
+  color: #f2994a;
+  font-size: 6px;
 }
 .hero__title {
-  font-size: 24px;
-  line-height: 30px;
+  font-size:24px;
+  line-height:30px;
   color:$text-color;
 }
 .hero-btn {
@@ -218,8 +203,12 @@ font-size: 6px;
 }
 .wrap {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @include media-breakpoint-up(md) { 
-    display: flex;}
+    display: flex;
+  }
   @include media-breakpoint-up(lg) {
     display: flex;
   }
@@ -229,16 +218,23 @@ font-size: 6px;
   }
 }
 .hero-list {
-  margin-top: 67px;
-  margin-bottom: 59px;
   display: flex;
-  justify-content: space-between;
-    &:first-child {
-      color:$secondary-color;
-      border-bottom: 4px solid $secondary-color
-    }
+  flex-direction: column;
+  align-items: center;
+  @include media-breakpoint-up(lg) {
+    margin-top: 52px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+    @include media-breakpoint-up(xl) {
+      margin-top: 52px;
+      margin-bottom: 40px;
+      flex-direction: row;
+      justify-content: space-between;
+  }
 }
-.hero-item__inf{
+.hero-item__inf {
   font-size: 14px;
   line-height: 18px;
   color:$text-color;
@@ -249,4 +245,10 @@ font-size: 6px;
       outline: none;
       border-bottom: 4px solid $secondary-color
   }
+}
+.hero-item {
+  padding-bottom:25px;
+}
+.hero-img {
+  max-width: 100%;
 }
