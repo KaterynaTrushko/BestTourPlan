@@ -1,6 +1,17 @@
 .hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: column;
+  }
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    justify-content: space-between;
+  }  
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      justify-content: space-between;
+  }
 }
 .hero-wrap {
   display: flex;
@@ -19,9 +30,9 @@
   color:$text-color;
 }
 .hero-btn {
-  display: block;
-  text-align: center;
+  display: inline-block;
   margin-left: 14px;
+  text-align: center;
   max-height: 20px;
   padding-left: 9px;
   padding-right: 10px;
@@ -30,7 +41,7 @@
   background: $secondary-color;
   border-radius:3px;
     &:hover {
-      background-color:#ac1f46; ;
+      background-color:#ac1f46;
     }
 }
 .hero-text {
@@ -150,7 +161,7 @@
   position: relative;
   top: 7px;
 }
-.booking-item__text3 {
+.booking-text3 {
   position: relative;
   top: 7px;
   color:$var-color;
@@ -165,6 +176,7 @@
   margin-right: auto;
   font-size: 14px;
   line-height: 19px;
+  white-space: nowrap;
   color:$var-color;
   background-color: $secondary-color;
   border-radius: 4px;
@@ -232,14 +244,19 @@
       margin-bottom: 40px;
       flex-direction: row;
       justify-content: space-between;
+    }
   }
-}
+  .first-child {
+    color:$secondary-color;
+    border-bottom: 4px solid $secondary-color
+  }
+
 .hero-item__inf {
   font-size: 14px;
   line-height: 18px;
   color:$text-color;
   outline: none;
-    &:hover {
+     &:hover {
       color:$secondary-color;
       text-decoration: none;
       outline: none;

@@ -1,16 +1,23 @@
 .footer-title {
   margin-top: 30px;
   padding-bottom: 10px;
+  text-align: center;
     @include footer-tit; 
-    @include media-breakpoint-up(lx){
-      margin-top: 108px;
+    @include media-breakpoint-up(md){
+      margin-top: 25px;
+      text-align: start;
     } 
     @include media-breakpoint-up(lg){
+      margin-top: 30px;
+      text-align: start;
+  }
+    @include media-breakpoint-up(xl){
       margin-top: 108px;
+      text-align: start;
   }
 }
 .footer-text {
-  @include footer-tex
+  @include footer-tex;
 }
 .footer-info {
   display: block;
@@ -26,10 +33,12 @@
 .footer-wrap {
   @include media-breakpoint-up(md) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    
   }
   @include media-breakpoint-up(lg) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   @include media-breakpoint-up(xl) {
@@ -44,7 +53,7 @@
 .footer-icon {
   font-family: "icommon";
   color: $var-color;
-  tab-size: 20px;
+  font-size: 20px;
   padding-right: 12px;
 }
 .fotter-linc{
@@ -57,18 +66,158 @@
 .fotter-img {
   width: 166px;
   height: 192px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__img {
   margin-top: 30px;
   margin-bottom: 30px;
-    @include media-breakpoint-up(lx){
-      margin-top: 139px;
-    } 
-    @include media-breakpoint-up(lg){
-      margin-top: 139px;
-    }
+  @include media-breakpoint-up(md){
+    margin-top: 25px;
+  } 
+  @include media-breakpoint-up(lg){
+    margin-top: 30px;
 }
-.footer-item__linl {
+  @include media-breakpoint-up(xl){
+    margin-top: 108px;
+  } 
+}
+.footer-text__linl {
   text-decoration: none;
   @include footer-tex;
+  &:hover {
+    text-decoration: none;
+    color:$secondary-color;
+  }
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.icon-cast {
+  // display: inline-block;
+  font-family: "icommon";
+  font-size: 17px;
+  padding-right: 22px;
+}
+.posit {
+  position: relative;
+  bottom: 26px;
+}
+.footer-tel {
+  display: inline-block;
+}
+.footer-input {
+  display: block;
+  padding-left: 23px;
+  margin-bottom: 15px;
+  width: 255px;
+  height: 50px;
+  background: $var-color;
+  border-radius: 4px;
+    &:placeholder { 
+      display: block;
+      font-family: inherit;
+      font-size: 12px;
+      line-height: 15px;
+      color: #bdbdbd;
+      }
+    &:focus {
+      background-color: rgb(214, 211, 211);
+      outline:none;
+      outline-offset: 0px;
+    }
+    &:hover {
+      background-color: rgb(214, 211, 211);
+      outline:none;
+      outline-offset: 0px;
+    }
+}
+.footer-message {
+  display: block;
+  padding: 18px 23px;
+  margin-bottom: 20px;
+  width: 255px;
+  height: 123px;
+  background: $var-color;
+  border-radius: 4px;
+    @include media-breakpoint-up(md) {
+      width: 539px; }
+    @include media-breakpoint-up(lg) {
+      width: 539px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 539px;
+    }
+    &:placeholder { 
+      display: block;
+      font-family: inherit;
+      font-size: 12px;
+      line-height: 15px;
+      color: #bdbdbd;
+    }
+    &:focus {
+    box-shadow: 0px 0px 6px rgba(172, 5, 5, 0.315);
+    }
+  }
+.footer-btn {
+  padding: 18px 65px 17px 66px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: $var-color;
+  background: $secondary-color;
+  border-radius: 4px;
+  &:hover {
+    background-color: #ac1f46;
+  }
+}
+.footer-col {
+  display: block;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.footer-add {
+  font-size: 12px;
+  line-height: 15px;
+  color: #e0e0e0;
+}
+.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-addlink {
+  display: inline-block;
+  text-align: end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 15px;
+  color:$var-color;
+  &:hover {
+    text-decoration: none;
+    color: #ac1f46;
+  }
+  @include media-breakpoint-up(md){
+    margin-top: 102px;
+    margin-bottom: 46px;
+  }
+  @include media-breakpoint-up(lg){
+    margin-top: 102px;
+    margin-bottom: 46px;
+  }
+  @include media-breakpoint-up(xl){
+    margin-top: 102px;
+    margin-bottom: 46px;
+  }
+
+}
+.footer-bank {
+  display: inline-block;
+  margin-bottom: 46px;
+  margin-left: 30px;
+  @include media-breakpoint-up(xl){
+      margin-bottom: 0px;
+      margin-left: 285px;
+  }
 }

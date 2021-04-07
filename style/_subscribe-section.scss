@@ -4,7 +4,8 @@
   margin-bottom: 50px;
   background-image: url("/images/back_sub.jpg");
   background-repeat:no-repeat;
-  background-position: center;
+  background-size: cover;
+  background-position: center center;
 }
 .subscribe-block__text {
 margin-top: 25px;
@@ -13,6 +14,12 @@ font-weight: 300;
 font-size: 18px;
 line-height: 20px;
 color:$var-color;
+  @include media-breakpoint-up(md) {
+    margin-top: 40px;
+    }
+  @include media-breakpoint-up(lg) {
+    margin-top: 60px;
+    }
   @include media-breakpoint-up(xl) {
     font-size: 24px;
     margin-top: 98px;
@@ -34,16 +41,19 @@ color:$var-color;
   display: none;
 }
 .subscribe-form {
+  margin-top: 25px;
   display: flex;
   padding-bottom: 15px;
+  margin-bottom: 25px;
     @include media-breakpoint-up(md) {
       margin-top: 40px;
   }
     @include media-breakpoint-up(lg) {
-      margin-top: 108px;
+      margin-top: 60px;
   }
     @include media-breakpoint-up(xl) {
       margin-top: 108px;
+      margin-bottom: 97px;
       line-height: 45px;
       font-size: 36px;
   }
@@ -64,28 +74,29 @@ color:$var-color;
   }
 }
 .subscribe-form__inp {
-  max-width:290px ;
   background: $var-color;
   border-radius: 4px 0 0 4px;
   padding-top: 19px;
   padding-top: 12px;
   padding-bottom: 18px;
+  font-size: 14px;
+  line-height: 16px;
   padding-bottom: 12px;
   padding-left: 33px;
-  &:placeholder {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    color: $placehol-col;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 1px rgb(66, 136, 216);
-  }
-  &:hover {
-    box-shadow: 0 0 0 1px rgb(66, 136, 216);
-  }
-  // @include media-breakpoint-up(sm) {
-  //   
-  // }  
+    @include media-breakpoint-up (xl){
+      padding-right: 96px;
+    }
+    &:placeholder {
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 16px;
+      color: $placehol-col;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px rgb(66, 136, 216);
+    }
+    &:hover {
+      box-shadow: 0 0 0 1px rgb(66, 136, 216);
+    }
 }

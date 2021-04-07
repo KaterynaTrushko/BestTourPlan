@@ -1,0 +1,104 @@
+.testim-title {
+  margin-top: 40px;
+  margin-bottom: 85px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  @include media-breakpoint-up(xl){
+    margin-top: 60px;
+    margin-bottom: 115px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+.testim-user__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+.testim-user__date {
+  margin-bottom: 10px;
+  margin-top: 9px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color:$secondary-color;
+}
+.testim-user__adres {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 10px;
+  line-height: 13px;
+  color: $title-color;
+}
+.stars {
+  justify-content: center;
+  align-items:flex-start;
+  align-content:flex-start;
+}
+.position {
+  position: relative;
+}
+.testim-user {
+  display: block;
+  position: absolute;
+  top: 85px;
+  right: calc(50% - 45px);
+  z-index: 1;
+  opacity: 1;
+  @include media-breakpoint-up(xl) {
+    top: 115px;
+    }
+ }
+.testim-text {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 136px;
+  padding-right: 20px;
+  padding-bottom: 29px;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: justify;
+  color: $text-color;
+  background-color: $var-color;
+  z-index: -1;
+  @include media-breakpoint-up(lg) {
+    padding-left: 99px;
+    padding-right: 95px;
+    margin-bottom: 70px;
+    }
+  @include media-breakpoint-up(xl) {
+    padding-left: 99px;
+    padding-right: 95px;
+    margin-bottom: 70px;
+    }
+    &:after {
+      content: "\e917";
+      font-family: "icommon";
+      color: black;
+      position: absolute;
+    }
+
+}
+.tesim-stars {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+ }
+.testim-icon {
+  text-align: center;
+  font-family: "icomoom";
+  margin-top: 5px;
+  padding-left: 4px;
+  font-size: 6px;
+  color: $icon-col;
+  background: $var-color;
+  border-radius: 8px;
+}
+
