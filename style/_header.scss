@@ -27,15 +27,16 @@ body {
   justify-content: center;
   min-width: 243px;
   text-decoration: none;
-  @include text-preheader;
-  &:hover {
-    font-weight: bold;
-    text-shadow: 1px 1px;
-    color:$text-color;
-  }
-  @include media-breakpoint-up(xl){
+    @include text-preheader;
+    &:hover {
+      font-weight: bold;
+      text-shadow: 1px 1px;
+      color:$text-color;
+    }
+}
+.header__tel {
+  @include media-breakpoint-up(xl) {
     justify-content: flex-start;
-    
   }
 }
 .header-card__link {
