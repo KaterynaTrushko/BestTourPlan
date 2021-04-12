@@ -3249,7 +3249,7 @@ hr {
 .subscribe-block {
   margin-top: 99px;
   margin-bottom: 50px;
-  background-image: url("/images/back_sub.jpg");
+  background-image: url("images/back_sub.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
